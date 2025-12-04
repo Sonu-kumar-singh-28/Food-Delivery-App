@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Standard Colors -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +9,22 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom App Colors -->
+    <color name="orange">#FB8500</color>
+    <color name="lightPink">#FFF5F6</color>
+    <color name="addButtonRed">#CE1022</color>
+    <color name="greyishBlack">#464959</color>
+    <color name="redish">#E91E63</color>
+    <color name="finalScreenCard">#FDF6EC</color>
+
+    <!-- Profile screen Colors -->
+    <color name="ViewActivityClickableColor">#FF196A3D</color>
+    <color name="ZomatoGold">#FBD914</color> <!-- Fixed 7-digit hex -->
+    <color name="greendivider">#FF127C45</color>
+    <color name="greenLight">#FFD8F3DF</color>
+    <color name="completedpercentageback">#FFFFFFE2</color>
+    <color name="percentage">#FFAF9136</color>
+    <color name="whitebackground">#FFFEF7FF</color>
+
 </resources>

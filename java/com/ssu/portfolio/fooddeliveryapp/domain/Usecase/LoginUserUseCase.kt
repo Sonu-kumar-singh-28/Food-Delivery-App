@@ -1,16 +1,22 @@
 package com.ssu.portfolio.fooddeliveryapp.domain.Usecase
 
-import com.google.android.play.core.integrity.t
 import com.ssu.portfolio.fooddeliveryapp.common.ResultState
 import com.ssu.portfolio.fooddeliveryapp.data.models.userData
 import com.ssu.portfolio.fooddeliveryapp.domain.repo.Repo
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class LoginUserUseCase @Inject constructor(val  repo: Repo){
+class LoginUserUseCase @Inject constructor(
+    private val repo: Repo
+) {
+    fun loginUser(email: String, password: String): Flow<ResultState<String>> {
 
-    fun loginUser(userData: userData): Flow<ResultState<String>>{
-        return repo.loginWithEmailAndPassword(userData)
+        // Create userData object for login
+        val user = userData(
+            email = email,
+            password = password
+        )
+
+        return repo.loginWithEmailAndPassword(user)
     }
-
 }

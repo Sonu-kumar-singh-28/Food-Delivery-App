@@ -5,6 +5,4 @@ data class userData(
     val email: String="",
     val  password: String="",
     val  address: String=""
-
-
 )

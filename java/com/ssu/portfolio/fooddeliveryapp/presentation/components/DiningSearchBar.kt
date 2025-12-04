@@ -35,7 +35,7 @@ import androidx.navigation.NavController
 import com.ssu.portfolio.fooddeliveryapp.R
 
 @Composable
-fun DiningSearchBar() {
+fun DiningSearchBar(navController: NavController) {
 
     var query by remember { mutableStateOf("") }
 
@@ -103,9 +103,3 @@ fun DiningSearchBar() {
 
 
 
-
-@Preview(showBackground = true)
-@Composable
-private fun PRevUi() {
-    DiningSearchBar()
-}
